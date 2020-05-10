@@ -1,0 +1,21 @@
+{
+  "name": "portafolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "Marco Alzamora <alzamora1008@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "mongodb": "^3.5.7",
+    "mongoose": "^5.9.13"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
