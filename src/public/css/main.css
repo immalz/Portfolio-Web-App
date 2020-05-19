@@ -484,3 +484,65 @@ nav ul li a:hover::after{
 .footer a:hover {
   color: var(--red);
 }
+
+
+/*-----RESPONSIVE-------*/
+
+@media (max-width:375px){
+
+/*---HEADER---*/
+  header {
+    height: 40px;
+  }
+  .menu-toggle i{
+    font-size: 25px;
+  }
+  nav ul{
+    padding: 0;
+  }
+  nav ul li {
+    margin: 20px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  .menu-toggle{
+    position: absolute;
+    top: -15px;
+    right: 10px;
+	}
+
+  /*---Home----*/
+  .hero .bg .bg-text .textos {
+    margin-top: 55%;
+    text-align: center;
+  }
+  .hero .bg .bg-text .textos h1 {
+    font-size: 33px;
+  }
+  .hero .bg .bg-text .textos .container {
+    width: 350px;
+    height: 40px;
+    line-height: 40px;
+  }
+  .hero .bg .bg-text .textos .container ul{
+    font-size: 17px;
+    padding-left: 10px;
+  }
+  .hero .bg .bg-text .about-more button {
+    font-size: 18px;
+    padding-bottom: 3px;
+  }
+  hr {
+    width: 50%;
+  }
+  .acerca-de .info-container .about-gallery {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+  }
+  .acerca-de .info-container .about-gallery figure {
+   width: 100%;
+  }
+  
+}
