@@ -7,9 +7,17 @@ const projects = [{
     "img": "https://i.imgur.com/3Xqb5rH.png",
     "direccion": "https://github.com/immalz/Landing-Page"
   },{
+    "name": "Frontend Development Courses",
+    "img": "https://i.imgur.com/L5doQCj.png",
+    "direccion": "https://github.com/immalz/-MACCourses"
+  },{
     "name": "The Conway Game",
     "img": "https://i.imgur.com/wvdTPUe.png",
     "direccion": "https://github.com/immalz/Conway-s_Game"
+  },{
+    "name": "SNJ School Page",
+    "img": "https://i.imgur.com/zgkDI0k.png",
+    "direccion": "https://github.com/immalz/private-school-web"
   },{
     "name": "Text Message App",
     "img": "https://i.imgur.com/cp4B1NN.png",
