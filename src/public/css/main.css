@@ -496,13 +496,57 @@ nav ul li a:hover::after {
 /*-----------SERVICES-----------*/
 
 .espacio {
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.726);
+    background: rgba(0, 0, 0, .7);
 }
 
 .services {
     width: 100%;
-    height: calc(100vh - 180px);
+    height: 100vh;
+    background: url('../images/fondo-services.webp');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.services::before {
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, .6)
+}
+
+.services__hero {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+.services__hero h1 {
+    font-size: 60px;
+    letter-spacing: 15px;
+    font-family: 'Dosis', sans-serif;
+    margin: 10px 0;
+}
+
+.services__hero p {
+    font-family: 'Dosis', sans-serif;
+}
+
+.services__hero hr {
+    width: 50%;
+    margin: 30px auto;
+    border: 2px solid white;
+}
+
+#launch {
+    font-size: 40px;
+    word-spacing: 20px;
 }
 
 
