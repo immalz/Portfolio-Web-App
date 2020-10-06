@@ -13,14 +13,14 @@ app.use(require('./routes/service'));
 app.use(require('./routes/contact'));
 
 
-// Setings
+// Settings
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.engine('.hbs', exphbs({
     defaultLayout: 'main',
-    layoutsDir:path.join(app.get('views'), 'layouts'),
+    layoutsDir: path.join(app.get('views'), 'layouts'),
     partialsDir: path.join(app.get('views'), 'partials'),
-    extname:'.hbs'
+    extname: '.hbs'
 }));
 app.set('view engine', '.hbs');
 
