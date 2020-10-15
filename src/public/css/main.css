@@ -341,6 +341,7 @@ nav ul li a:hover::after {
 
 .acerca-de .info-container .about-gallery {
     width: 100%;
+    min-height: 350px;
     display: flex;
     justify-content: center;
     margin: 50px 0px;
@@ -576,7 +577,44 @@ nav ul li a:hover::after {
 
 /*-----RESPONSIVE-------*/
 
+@media (max-width:700px) {
+    p {
+        font-size: 14px !important;
+    }
+    .acerca-de .info-container .about-gallery {
+        flex-wrap: wrap;
+    }
+    .acerca-de .info-container .about-gallery figure {
+        width: 40%;
+    }
+}
+
+@media (max-width:450px) {
+    p {
+        font-size: 13px !important;
+        margin: 5px 0 !important;
+    }
+    .hero .bg .bg-text .textos h1 {
+        font-size: 40px;
+        max-width: 330px;
+        margin: auto;
+        margin-top: 50%;
+        text-align: center;
+    }
+    .acerca-de .info-container .about-gallery {
+        flex-direction: column;
+    }
+    .acerca-de .info-container .about-gallery figure {
+        width: 100%;
+    }
+}
+
 @media (max-width:375px) {
+    .hero .bg .bg-text .textos h1 {
+        max-width: 300px;
+        margin: auto;
+        text-align: center;
+    }
     /*---HEADER---*/
     header {
         height: 40px;
