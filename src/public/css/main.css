@@ -4,6 +4,7 @@ body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 * {
@@ -199,7 +200,7 @@ nav ul li a:hover::after {
 .hero {
     width: 100%;
     display: grid;
-    background-image: url('https://i.imgur.com/D2QZpPm.jpg');
+    background-image: url('../images/hero.webp');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -208,6 +209,7 @@ nav ul li a:hover::after {
 }
 
 .hero .bg {
+    width: 100%;
     background: rgba(0, 0, 0, 0.6);
 }
 
@@ -224,7 +226,7 @@ nav ul li a:hover::after {
 
 .hero .bg .bg-text .textos .container {
     display: flex;
-    width: 600px;
+    max-width: 600px;
     height: 40px;
     line-height: 40px;
     top: 0;
