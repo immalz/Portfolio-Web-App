@@ -199,32 +199,45 @@ nav ul li a:hover::after {
 
 .hero {
     width: 100%;
-    display: grid;
+    display: flex;
     background-image: url('../images/hero.webp');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    height: calc(100vh - 60px);
+    height: 100vh;
+    position: relative;
+    align-items: center;
 }
 
-.hero .bg {
+.hero::before {
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.hero .textos {
     width: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
-.hero .bg .bg-text .textos {
-    margin-top: 18%;
-    text-align: center;
-}
-
-.hero .bg .bg-text .textos h1 {
+.hero .textos h1 {
     font-size: 70px;
     color: var(--white);
     margin: 0;
+    text-align: center;
 }
 
-.hero .bg .bg-text .textos .container {
+.hero .textos .container {
     display: flex;
     max-width: 600px;
     height: 40px;
@@ -233,11 +246,12 @@ nav ul li a:hover::after {
     right: 0;
     bottom: 0;
     left: 0;
-    margin: auto;
     overflow: hidden;
+    text-align: center;
+    justify-content: center;
 }
 
-.hero .bg .bg-text .textos .container ul {
+.hero .textos .container ul {
     list-style: none;
     font-size: 30px;
     color: var(--white);
@@ -275,20 +289,13 @@ nav ul li a:hover::after {
     }
 }
 
-.hero .bg .wave {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
-
-.hero .bg .bg-text .about-more {
+.hero .about-more {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.hero .bg .bg-text .about-more button {
+.hero .about-more button {
     width: 140px;
     height: 40px;
     background: var(--blue);
@@ -303,7 +310,7 @@ nav ul li a:hover::after {
     transition: 0.5s;
 }
 
-.hero .bg .bg-text .about-more button:hover {
+.hero .about-more button:hover {
     background: var(--red);
 }
 
@@ -589,6 +596,7 @@ nav ul li a:hover::after {
     }
     .menu-toggle i {
         font-size: 25px;
+        margin-right: 10px;
     }
     /*---HEADER---*/
     header {
@@ -615,11 +623,10 @@ nav ul li a:hover::after {
         font-size: 13px !important;
         margin: 5px 0 !important;
     }
-    .hero .bg .bg-text .textos h1 {
+    .hero .textos h1 {
         font-size: 40px;
         max-width: 330px;
-        margin: auto;
-        margin-top: 50%;
+        margin: 0 auto;
         text-align: center;
     }
     .acerca-de .info-container .about-gallery {
@@ -631,9 +638,8 @@ nav ul li a:hover::after {
 }
 
 @media (max-width:375px) {
-    .hero .bg .bg-text .textos h1 {
+    .hero .textos h1 {
         max-width: 300px;
-        margin: auto;
         text-align: center;
     }
     /*---HEADER---*/
@@ -655,23 +661,22 @@ nav ul li a:hover::after {
         right: 10px;
     }
     /*---Home----*/
-    .hero .bg .bg-text .textos {
-        margin-top: 55%;
+    .hero .textos {
         text-align: center;
     }
-    .hero .bg .bg-text .textos h1 {
+    .hero .textos h1 {
         font-size: 33px;
     }
-    .hero .bg .bg-text .textos .container {
-        width: 350px;
+    .hero .textos .container {
+        max-width: 350px;
         height: 40px;
         line-height: 40px;
     }
-    .hero .bg .bg-text .textos .container ul {
+    .hero .textos .container ul {
         font-size: 17px;
         padding-left: 10px;
     }
-    .hero .bg .bg-text .about-more button {
+    .hero .about-more button {
         font-size: 18px;
         padding-bottom: 3px;
     }
