@@ -1,26 +1,15 @@
-<div class="espacio" style="height: 60px;"></div>
+
 
 
 <div class="portafolio">
-    <section class="body-portfolio">
-    <h1>TECHNOLOGIES LEARNED</h1>
-    <div class="techno">
-        <img src="https://i.imgur.com/xUfnwqB.png" alt="">
-        <img src="https://i.imgur.com/1LQPLOE.png" alt="">
-        <img src="https://i.imgur.com/gPtvxFv.png" alt="">
-        <img src="https://i.imgur.com/Zh69PWS.png" alt="">
-        <img src="https://i.imgur.com/2PML1Bx.png" alt="">
-        <img src="https://i.imgur.com/EcryjGq.png" alt="">
-    </div>
-</section>
-
-<section class="proyectos">
-    {{#each projects}}
-    <div class="proyecto">
-        <p> {{ name }}</p>
-        <a href={{direccion}} target="_blank"><img class="proyecto__imagen" src={{ img }} alt=""></a>
-    </div>
-    {{/each}}
-</section>
+    <div class="espacio" style="height: 60px;"></div>
+    <section class="proyectos">
+        {{#each projects}}
+        <div class="proyecto">
+            <p> {{ name }}</p>
+            <a href={{direccion}} target="_blank"><img class="proyecto__imagen" src={{ img }} alt=""></a>
+        </div>
+        {{/each}}
+    </section>
 </div>
 
