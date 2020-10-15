@@ -614,6 +614,10 @@ nav ul li a:hover::after {
     .acerca-de .info-container .about-gallery figure {
         width: 100%;
     }
+    .hero .textos .container ul {
+        font-size: 17px;
+        padding-left: 10px;
+    }
 }
 
 @media (max-width:375px) {
@@ -654,10 +658,6 @@ nav ul li a:hover::after {
         max-width: 350px;
         height: 40px;
         line-height: 40px;
-    }
-    .hero .textos .container ul {
-        font-size: 17px;
-        padding-left: 10px;
     }
     .hero .about-more button {
         font-size: 18px;
