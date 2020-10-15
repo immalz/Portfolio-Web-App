@@ -205,7 +205,7 @@ nav ul li a:hover::after {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    min-height: 100vh;
+    height: calc(100vh - 60px);
 }
 
 .hero .bg {
@@ -587,6 +587,27 @@ nav ul li a:hover::after {
     .acerca-de .info-container .about-gallery figure {
         width: 40%;
     }
+    .menu-toggle i {
+        font-size: 25px;
+    }
+    /*---HEADER---*/
+    header {
+        height: 40px;
+    }
+    nav ul {
+        padding: 0;
+    }
+    nav ul li {
+        margin: 20px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    .menu-toggle {
+        position: absolute;
+        top: -15px;
+        right: 10px;
+    }
 }
 
 @media (max-width:450px) {
@@ -618,9 +639,6 @@ nav ul li a:hover::after {
     /*---HEADER---*/
     header {
         height: 40px;
-    }
-    .menu-toggle i {
-        font-size: 25px;
     }
     nav ul {
         padding: 0;
